@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823A92CF2A017FB400CA8B42 /* BreedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92CE2A017FB400CA8B42 /* BreedList.swift */; };
+		823A92D32A0180E200CA8B42 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92D22A0180E200CA8B42 /* APIClient.swift */; };
+		823A92D52A0182BF00CA8B42 /* BreedListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92D42A0182BF00CA8B42 /* BreedListAPI.swift */; };
+		823A92D82A01877300CA8B42 /* BreedListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92D72A01877300CA8B42 /* BreedListUseCase.swift */; };
+		823A92DD2A01885E00CA8B42 /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92DC2A01885E00CA8B42 /* BreedListView.swift */; };
+		823A92DF2A01888900CA8B42 /* BreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823A92DE2A01888900CA8B42 /* BreedListViewModel.swift */; };
 		8256A81E2A01778E00A7209D /* MVVM_CleanArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8256A81D2A01778E00A7209D /* MVVM_CleanArchitectureApp.swift */; };
 		8256A8202A01778E00A7209D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8256A81F2A01778E00A7209D /* ContentView.swift */; };
 		8256A8222A01779000A7209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8256A8212A01779000A7209D /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		823A92CE2A017FB400CA8B42 /* BreedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedList.swift; sourceTree = "<group>"; };
+		823A92D22A0180E200CA8B42 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		823A92D42A0182BF00CA8B42 /* BreedListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListAPI.swift; sourceTree = "<group>"; };
+		823A92D72A01877300CA8B42 /* BreedListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListUseCase.swift; sourceTree = "<group>"; };
+		823A92DC2A01885E00CA8B42 /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
+		823A92DE2A01888900CA8B42 /* BreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewModel.swift; sourceTree = "<group>"; };
 		8256A81A2A01778E00A7209D /* MVVM+CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8256A81D2A01778E00A7209D /* MVVM_CleanArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CleanArchitectureApp.swift; sourceTree = "<group>"; };
 		8256A81F2A01778E00A7209D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +83,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823A92CB2A017CD900CA8B42 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				823A92CE2A017FB400CA8B42 /* BreedList.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		823A92CC2A017CE800CA8B42 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				823A92D62A01875800CA8B42 /* BreedListUseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		823A92CD2A017CF400CA8B42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				823A92D02A01809B00CA8B42 /* API */,
+				823A92CB2A017CD900CA8B42 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		823A92D02A01809B00CA8B42 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				823A92D42A0182BF00CA8B42 /* BreedListAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		823A92D12A0180D000CA8B42 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				823A92D22A0180E200CA8B42 /* APIClient.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		823A92D62A01875800CA8B42 /* BreedListUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				823A92D72A01877300CA8B42 /* BreedListUseCase.swift */,
+			);
+			path = BreedListUseCase;
+			sourceTree = "<group>";
+		};
+		823A92D92A01883600CA8B42 /* BreedList */ = {
+			isa = PBXGroup;
+			children = (
+				823A92DB2A01884600CA8B42 /* ViewModel */,
+				823A92DA2A01884100CA8B42 /* View */,
+			);
+			path = BreedList;
+			sourceTree = "<group>";
+		};
+		823A92DA2A01884100CA8B42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				823A92DC2A01885E00CA8B42 /* BreedListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		823A92DB2A01884600CA8B42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				823A92DE2A01888900CA8B42 /* BreedListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8256A8112A01778D00A7209D = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +182,11 @@
 			children = (
 				8256A81D2A01778E00A7209D /* MVVM_CleanArchitectureApp.swift */,
 				8256A81F2A01778E00A7209D /* ContentView.swift */,
+				823A92D92A01883600CA8B42 /* BreedList */,
+				823A92CD2A017CF400CA8B42 /* Data */,
+				823A92CC2A017CE800CA8B42 /* Domain */,
 				8256A8212A01779000A7209D /* Assets.xcassets */,
+				823A92D12A0180D000CA8B42 /* APIClient */,
 				8256A8232A01779100A7209D /* Preview Content */,
 			);
 			path = "MVVM+CleanArchitecture";
@@ -258,7 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8256A8202A01778E00A7209D /* ContentView.swift in Sources */,
+				823A92DD2A01885E00CA8B42 /* BreedListView.swift in Sources */,
+				823A92CF2A017FB400CA8B42 /* BreedList.swift in Sources */,
+				823A92D82A01877300CA8B42 /* BreedListUseCase.swift in Sources */,
 				8256A81E2A01778E00A7209D /* MVVM_CleanArchitectureApp.swift in Sources */,
+				823A92DF2A01888900CA8B42 /* BreedListViewModel.swift in Sources */,
+				823A92D52A0182BF00CA8B42 /* BreedListAPI.swift in Sources */,
+				823A92D32A0180E200CA8B42 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

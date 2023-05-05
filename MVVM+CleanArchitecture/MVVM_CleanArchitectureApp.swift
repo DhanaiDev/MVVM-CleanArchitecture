@@ -11,7 +11,7 @@ import SwiftUI
 struct MVVM_CleanArchitectureApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BreedListView()
         }
     }
 }
